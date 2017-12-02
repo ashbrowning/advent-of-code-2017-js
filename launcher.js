@@ -2,7 +2,7 @@ const fs = require('fs');
 const moment = require('moment');
 
 module.exports = (dayArg, partArg) => {
-  const solution = require(`./day_${dayArg}/part_${partArg}.js`);
+  const solution = require(`./day_${dayArg}/solution.js`)[`part${partArg}`];
   const input = fs.readFileSync(
       `${__dirname}/day_${dayArg}/input.txt`,
       { encoding: 'utf8' }

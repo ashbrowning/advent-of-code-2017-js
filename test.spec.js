@@ -3,8 +3,18 @@
 
 const launcher = require('./launcher.js');
 
+const answers = [
+  [1175, 1166],
+];
+
 describe('Advent of code tests', () => {
-  // it('should give correct answers to day 1 part 1', () => {
-  //   expect(launcher(1, 1)).toBe(241);
-  // });
+  answers.forEach( (answers, index) => {
+    const day = index + 1;
+    it(`should give correct answers to day ${day} part 1`, () => {
+      expect(launcher(day, 1)).toBe(answers[0]);
+    });
+    it(`should give correct answers to day ${day} part 2`, () => {
+      expect(launcher(day, 2)).toBe(answers[1]);
+    });
+  });
 });
