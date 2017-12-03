@@ -29,6 +29,7 @@
     "node": "^9.0.0"
   },
   "dependencies": {
+    "eslint-plugin-import": "^2.8.0",
     "jasmine-node": "^1.14.5"
   }
 }
