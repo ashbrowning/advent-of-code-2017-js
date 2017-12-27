@@ -6,6 +6,7 @@ const launcher = require('./launcher.js');
 const answers = [
   [1175, 1166],
   [44887, 242],
+  [475, 279138]
 ];
 
 describe('Advent of code tests', () => {
